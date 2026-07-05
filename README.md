@@ -26,6 +26,17 @@ The system is designed to run locally, passing optimized serialization packets t
 
 * **Compute Environment:** Ubuntu 24.04 (Noble Numbat)
 * **Edge Actuation:** ESP32-S3 receiving payloads via `/dev/ttyUSB0`
+
+## 🚀 Quick Start (Simulation Mode)
+
+Clone the repository and run the pipeline to initialize the GAT network, train the model, and view the hardware serialization payloads.
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Godlar/STGNN-Edge-Traffic-Control.git](https://github.com/Godlar/STGNN-Edge-Traffic-Control.git)
+cd STGNN-Edge-Traffic-Control
+pip install torch pandas numpy torch_geometric huggingface_hub
+python main.py
 * **Data Ingestion:** Simulated integration with OpenCV/YOLO video streams and analog sensor polling.
 
 ### Payload Example
